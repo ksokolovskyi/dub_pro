@@ -1,0 +1,29 @@
+name: dub_pro
+description: "Dub.co Pro plan animation"
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: '>=3.5.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.20.1
+  vector_graphics: ^1.1.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  vector_graphics_compiler: ^1.1.16
+  very_good_analysis: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+    - path: assets/images/
+      transformers:
+        - package: vector_graphics_compiler
